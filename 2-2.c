@@ -40,14 +40,14 @@ printf("value of **dptr == %d\n", **dptr); //변수 i의 값이 출력됨
 
 *ptr = 7777;    /* changing the value of *ptr */
 
-printf("\n[after *ptr = 7777] \n"); //포인터 ptr이 가르키고 있는 변수 i의 주소에 7777이 할당됨
+printf("\n[after *ptr = 7777] \n"); //변수 i의 주소값을 갖고 있는 포인터 ptr에 7777이 할당됨
 printf("value of i == %d\n", i); //변수 i의 값 출력됨
 printf("value of *ptr == %d\n", *ptr);//변수 i의 값 출력됨
 printf("value of **dptr == %d\n", **dptr);//변수 i의 값 출력됨
 
 **dptr = 8888;   /* changing the value of **dptr */
 
-printf("\n[after **dptr = 8888] \n");//이중포인터 dptr이 최종적으로 가르키고 있는 변수 i의 주소에 8888이 할당됨
+printf("\n[after **dptr = 8888] \n");//포인터 ptr의 주소값을 갖고 있는 이중포인터 dptr에 8888이 할당됨
 printf("value of i == %d\n", i); //변수 i의 값 출력됨
 printf("value of *ptr == %d\n", *ptr); //변수 i의 값 출력됨
 printf("value of **dptr == %d\n", **dptr); //변수 i의 값 출력됨
